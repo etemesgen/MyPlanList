@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF_8">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie-edge">
+       <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+       <script src="https://kit.fontawesome.com/0db10a4da6.js" crossorigin="anonymous"></script>
+       <title>MyPlanList App</title>
+    </head>
+        <body>
+           <div class="container mt-4">
+            <h1 class="display-4 text-center">
+              <i class="far fa-calendar-check text-primary"></i>&nbspMy<span class="text-primary">Plan</span>List</h1>
+            <form id="plan-form">
+                <div class="form-group">
+                    <label for="activity">Activity</label>
+                    <input type="text" id="activity" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" id="date" class="form-control">
+                </div>
+                <input type="submit" value="Add Plan" class="btn btn-primary btn-block">
+            </form>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Subject</th>    
+                        <th>Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="plan-list"></tbody>
+            </table>
+            </div>
+
+            <script src="app.js"></script>
+        </body>
+</html>
